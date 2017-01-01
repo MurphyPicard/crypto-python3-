@@ -16,14 +16,18 @@ def user_input_is_valid(cl_args):
     if len(cl_args) == 2 and cl_args[1].isdigit(): # exactly 2 arguments needed
         return True
     print("Please enter a number in the command line like 'python3 caesar.py 23'")
-    exit()
     return False
+    exit()
 
-user_input_is_valid(argv) # did they put a number in the command line?
+def main():
+    user_input_is_valid(argv) # did they put a number in the command line?
 
-a_message = input("Type a message: ")
-# a_number = int(input("Rotate by: "))
-# instead of asking for a number, the user will type a number on the command line
+    a_message = input("Type a message: ")
+    # a_number = int(input("Rotate by: "))
+    # instead of asking for a number, the user will type a number on the command line
 
-# argv[1] is the number the user types in the command line
-print(encrypt(a_message, int(argv[1])))
+    # argv[1] is the number the user types in the command line
+    print(encrypt(a_message, int(argv[1])))
+
+if __name__ == '__main__': # tells python to run the main function
+    main()

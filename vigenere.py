@@ -12,7 +12,12 @@ def encrypt(message, keyword):
             scrambled_text += message[i]
     return scrambled_text
 
-a_message = input("Type a message: ")
-a_keyword = input("Type a keyword: ")
+# everything cool happens here
+def main():
+    a_message = input("Type a message: ")
+    a_keyword = input("Type a keyword: ")
+    print(encrypt(a_message, a_keyword))
 
-print(encrypt(a_message, a_keyword))
+# this calls the main function above
+if __name__ == '__main__':
+    main()
