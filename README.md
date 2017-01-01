@@ -16,14 +16,13 @@ caesar.py is a little more interesting
 vigenere.py is a little more complex, but reused some of the code from caesar
 -   when prompted, type a message, like 'Hello, young kid!', or whatever
 -   when prompted, type a keyword, like 'bad', or whatever
--
 -   the program will return an encrypted message, according to the following:
 -   keyword letters:
 -   a = 0, b = 1, c = 2, d = 3, ... Z or z = 25 are used to rotate the letters in the message
 
 -   example:
--   message - H e l l o ,  y o u n g  k i d !
--   keyword - b a d b a    d b a d b  a d b     ('bad' revolves)
--   becomes - I e o m o ,  b p u q h  k l e !   (cool, huh?)
+-   message - Hello, young kid!
+-   keyword - badba__dbadb_adb    ('bad' revolves)
+-   becomes - Ieomo, bpuqh kle!    (cool, huh?)
 
 Making these was very enjoyable
